@@ -2,15 +2,16 @@ body {
   margin: 0;
   padding: 0;
   background-color: #fffff5;
+  font-family: "Inter", system-ui;
 }
 
 .main {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 50px;
-  margin: 20px;
-  padding: 15px;
+  gap: 3.125rem;
+  margin: 1.25rem;
+  padding: 0.938rem;
 }
 
 .details {
@@ -22,33 +23,61 @@ body {
   flex-direction: row;
   justify-content: space-between;
   width: 25%;
+  margin-bottom: -1rem;
 }
+font-family: "Inter", system-ui;
 
 h1 {
-  /* width: 25%; */
+  width: 52%;
   color: #12121a;
+  font-weight: 700;
+  font-size: xxx-large;
 }
 
-.name-title {
-  text-decoration-line: underline;
-  text-decoration-style: solid;
-  text-decoration-thickness: 0.5rem;
-  text-decoration-color: #f3ae55;
+.title {
+  position: relative;
+}
+
+.underline {
+  height: 1rem;
+  width: 79%;
+  background: rgb(243, 174, 85);
+  background: linear-gradient(
+    90deg,
+    rgba(243, 174, 85, 1) 21%,
+    rgba(247, 207, 148, 1) 54%
+  );
+  position: absolute;
+  bottom: 0.4rem;
+  z-index: -1;
 }
 
 p {
-  width: 70%;
+  width: 82%;
   color: #a2a09f;
 }
 
+.buttons {
+  display: flex;
+  /* justify-content: space-between; */
+  gap: 1.6rem;
+  margin-top: 2rem;
+}
+
 .rounded-button {
-  padding: 10px 20px;
-  border-radius: 20px;
-  font-size: 20px;
+  padding: 0.625rem 1.25rem;
+  border-radius: 1.5rem;
+  font-size: 1.25rem;
 }
 
 #btn-primary {
-  background-color: #b86adf;
+  background: rgb(131, 58, 180);
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 10%,
+    rgba(253, 29, 29, 1) 40%,
+    rgba(252, 176, 69, 1) 100%
+  );
   color: white;
   border: 0;
   /* display: flex;
@@ -56,8 +85,8 @@ p {
 }
 
 .right-arrow {
-  /* position: relative;
-  bottom: 5px; */
+  position: relative;
+  top: 0.125rem;
 }
 
 #btn-secondary {
@@ -66,6 +95,6 @@ p {
 
 .profile-pic {
   border-radius: 50%;
-  width: 300px;
-  height: 300px;
+  width: 18.75rem;
+  height: 18.75rem;
 }
